@@ -323,7 +323,7 @@ class AttachmentsController < ApplicationController
   end
 
   def send_file(path, options={})
-    headers['content-security-policy'] = "default-src 'none'; style-src 'unsafe-inline'; sandbox"
+    headers['content-security-policy'] = "default-src 'none'; style-src 'unsafe-inline';"
     super
   end
 end
